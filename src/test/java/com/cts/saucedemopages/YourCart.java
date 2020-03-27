@@ -14,14 +14,16 @@ public class YourCart {
 		this.driver = driver;
 	}
 	
-	public  String productsInCart() {
+	public  boolean productsInCart() {
 		String prosNumber = driver.findElement(yourCartLoc).getText();
 		int productsNumber = Integer.parseInt(prosNumber);
-		if(productsNumber > 0) {
-			return "true";
+		if(productsNumber > 0)
+		{
+			return true;
 		}
-		else {
-			return "false";
+		else
+		{
+			return false;
 		}
 	}
 	public void continueShopping()

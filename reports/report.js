@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/resources/feature/cucumber.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/resources/feature/saucedemo.feature");
 formatter.feature({
   "name": "SauceDemoPage",
   "description": "\tIn order to order a product in Saucedemo page\n    As a e-commerce vendor\n    I want to get access to the portal",
@@ -33,6 +33,18 @@ formatter.examples({
         "standard_user",
         "secret_sauce"
       ]
+    },
+    {
+      "cells": [
+        "problem_user",
+        "secret_sauce"
+      ]
+    },
+    {
+      "cells": [
+        "performance_glitch_user",
+        "secret_sauce"
+      ]
     }
   ]
 });
@@ -40,6 +52,9 @@ formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -76,10 +91,108 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have a browser with sauceDemoPage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.StepDefinitions.i_have_a_browser_with_sauceDemoPage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login with ValidCredentials",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "I enter userName as \u0027problem_user\u0027 and I enter password as  \u0027secret_sauce\u0027",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.StepDefinitions.i_enter_userName_as_and_I_enter_password_as11(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should access to the portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.StepDefinitions.i_should_access_to_the_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "these are the steps common for every scenario to be followed",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have a browser with sauceDemoPage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.StepDefinitions.i_have_a_browser_with_sauceDemoPage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login with ValidCredentials",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "I enter userName as \u0027performance_glitch_user\u0027 and I enter password as  \u0027secret_sauce\u0027",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.StepDefinitions.i_enter_userName_as_and_I_enter_password_as11(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should access to the portal",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cts.stepdefinitions.StepDefinitions.i_should_access_to_the_portal()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "these are the steps common for every scenario to be followed",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -97,11 +210,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I click on add to cart button by entering userName as \u0027standard_user\u0027 and password as  \u0027secret_sauce\u0027",
+  "name": "I click on add to cart button by entering login details from Excel \"src/test/resources/Excel/sauceddemoexcel.xlsx\" with SheetName \"Login Valid Credentials\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.cts.stepdefinitions.StepDefinitions.i_click_on_add_to_cart_button_by_entering_userName_as_and_password_as(java.lang.String,java.lang.String)"
+  "location": "com.cts.stepdefinitions.StepDefinitions.i_click_on_add_to_cart_button_by_entering_login_details_from_Excel_with_SheetName(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -116,10 +229,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -156,10 +275,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -196,10 +321,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -236,10 +367,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -257,7 +394,7 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I enter userName as \u0027standard_user\u0027 and password as  \u0027secret_sauce\u0027  and firstName as \u0027nimmi\u0027 and lastname as \u0027jimmi\u0027 and zipCode as \u0027522612\u0027",
+  "name": "I enter userName as \u0027standard_user\u0027 and password as  \u0027secret_sauce\u0027  and firstName as \u0027vasantha\u0027 and lastname as \u0027vanukuri\u0027 and zipCode as \u0027522612\u0027",
   "keyword": "When "
 });
 formatter.match({
@@ -276,10 +413,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -297,7 +440,7 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I enter userName as \u0027standard_user\u0027 and password as  \u0027secret_sauce\u0027 and firstName as \u0027nimmi\u0027 and lastname as \u0027jimmi\u0027 and zipCode as \u0027522612\u0027  and click on continue and then finish",
+  "name": "I enter userName as \u0027standard_user\u0027 and password as  \u0027secret_sauce\u0027 and firstName as \u0027vasantha\u0027 and lastname as \u0027vanukuri\u0027 and zipCode as \u0027522612\u0027  and click on continue and then finish",
   "keyword": "When "
 });
 formatter.match({
@@ -316,10 +459,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "these are the steps common for every scenario to be followed",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "I have a browser with sauceDemoPage",
@@ -337,7 +486,7 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I enter userName as \u0027standard_user\u0027 and password as  \u0027secret_sauce\u0027 and firstName as \u0027nimmi\u0027 and lastname as \u0027jimmi\u0027 and zipCode as \u0027522612\u0027  and click on continue and then finish",
+  "name": "I enter userName as \u0027standard_user\u0027 and password as  \u0027secret_sauce\u0027 and firstName as \u0027vasantha\u0027 and lastname as \u0027vanukuri\u0027 and zipCode as \u0027522612\u0027  and click on continue and then finish",
   "keyword": "When "
 });
 formatter.match({
@@ -354,6 +503,9 @@ formatter.match({
   "location": "com.cts.stepdefinitions.StepDefinitions.thank_you_for_order_message_should_be_displayed()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
